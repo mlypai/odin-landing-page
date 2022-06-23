@@ -72,19 +72,20 @@ button {
 }
 
 .main img {
-    background-color: grey;
-    flex-shrink: 0;
-    min-width: 500px;
-    min-height: 250px;
-    max-width: 500px;
-    max-height: 250px;
+    flex: none;
+    position: relative;
+    width: 500px;
+    height: 250px;
     line-height: 250px;
     text-align: center;
-    position: relative;
 }
 
-.main img::after {
+.main img::before{
+    background-color: grey;
     content: "this is a placeholder for an image";
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 .secondary {
@@ -93,6 +94,8 @@ button {
 }
 
 .quote {
+    display: flex;
+    flex-direction: column;
     background-color: #e5e7eb;
     font-size: 36px;
     color: #1f2937;
