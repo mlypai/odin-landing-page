@@ -91,6 +91,36 @@ button {
 .secondary {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    gap: 24px;
+}
+
+.secondary h1{
+    font-size: 36px;
+    font-weight: 800;
+    color: #1f2937;
+    padding-top: 36px;
+}
+
+.secondary .images{
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    padding-bottom: 72px;
+    align-items: center;
+}
+
+.image{
+    width: 180px;
+}
+
+.images img{
+    flex: none;
+    width: 175px;
+    height: 175px;
+    border-radius: 20px;
+    border: 5px solid #3882f6;
 }
 
 .quote {
