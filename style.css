@@ -1,26 +1,28 @@
 body {
     margin: 0;
-    padding: 0;
-}
-.body {
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
 }
 
+body > * {
+    padding: 0px 350px;
+}
+
 .header,
 .main{
+    justify-content: space-between;
     background-color: #1f2937;
     color: #e5e7eb;
     font-size: 18px;
     display: flex;
-    justify-content: space-between;
-    padding: 0 100px;
 }
 
 .header {
-    height: 60px;
+    min-height: 50px;
     align-items: center;
+    flex: 1;
+    flex-wrap: wrap;
 }
 
 .header h1 {
@@ -28,7 +30,7 @@ body {
     font-size: 24px;
 }
 
-ul {
+.header ul {
     display: flex;
     list-style: none;
     padding: 0;
@@ -37,7 +39,52 @@ ul {
 }
 
 .main {
+    min-height: 400px;
+    align-items: center;
+    gap: 48px;
+    flex: 1;
+}
 
+.main h1{
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.main .text {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 500px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+button {
+    background-color: #3882f6;
+    border: 1px solid black;
+    padding: 8px 32px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: white;
+}
+
+.main img {
+    background-color: grey;
+    flex-shrink: 0;
+    min-width: 500px;
+    min-height: 250px;
+    max-width: 500px;
+    max-height: 250px;
+    line-height: 250px;
+    text-align: center;
+    position: relative;
+}
+
+.main img::after {
+    content: "this is a placeholder for an image";
 }
 
 .secondary {
@@ -58,9 +105,4 @@ ul {
 }
 
 
-.main h1{
-    color: #f9faf8;
-    font-size: 48px;
-    font-weight: 800;
-}
 
