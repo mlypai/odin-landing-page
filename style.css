@@ -152,4 +152,11 @@ figcaption{
     border-color: white;
 }
 
-
+.footer{
+    background-color: #1f2937;
+    color: #e5e7eb;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
