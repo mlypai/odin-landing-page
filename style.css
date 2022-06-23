@@ -2,6 +2,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -11,18 +12,13 @@ body > * {
 
 .header,
 .main{
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex: 1;
     background-color: #1f2937;
     color: #e5e7eb;
     font-size: 18px;
-    display: flex;
-}
-
-.header {
-    min-height: 50px;
-    align-items: center;
-    flex: 1;
-    flex-wrap: wrap;
 }
 
 .header h1 {
@@ -40,9 +36,7 @@ body > * {
 
 .main {
     min-height: 400px;
-    align-items: center;
     gap: 48px;
-    flex: 1;
 }
 
 .main h1{
@@ -106,6 +100,7 @@ button {
 .secondary .images{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 36px;
     padding-bottom: 72px;
     align-items: center;
@@ -124,18 +119,37 @@ button {
 }
 
 .quote {
-    display: flex;
-    flex-direction: column;
+    margin: 0;
+    padding-top: 72px;
+    padding-bottom: 72px;
     background-color: #e5e7eb;
     font-size: 36px;
     color: #1f2937;
     font-style: italic;
 }
 
+figcaption{
+    text-align: right;
+}
 .end{
     background-color: #3882f6;
-    margin: 48px;
+    min-height: 50px;
+    margin: 72px 350px;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    font-size: 16px;
+    padding: 32px 200px;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.end strong{
+    font-size: 24px;
+}
+
+.end button{
+    border-color: white;
+}
 
 
